@@ -20,45 +20,52 @@
     <!-- header section -->
     <header class="header p-2">
         <!-- start main nav -->
-        <nav class="main-nav d-flex align-items-center shadow">
+        <nav class="main-nav d-flex align-items-center shadow container-fluid">
             <div class="logo px-2">
                 <h3 class="d-none d-md-flex">المكتب <span>الفني</span></h3>
                 <img src="images/tech-off.png" alt="user-img" class="rounded-circle d-md-none" style="width:40px;height: 40px;">
             </div>
         <!-- //////////////////////////////////// -->
-            <div class="user">
-                <div class="username d-center">
-                    <a href="#" class="nav-link d-center">
-                        <i class="fa-solid fa-angle-down fa-lg"></i>
-                        <div class="d-center flex-column ">
-                            <h6 class="d-lg-inline d-none">م.إيمان فتحى</h6>
-                            <small class="d-lg-inline d-none" style="margin-top: -10px;">مدير عام</small>
+            <div class="user-menue  d-center">
+                <i class="fa-solid fa-grip-lines fa-2xl d-lg-none"></i>
+                <div class="sub-menue d-flex">
+                    <div class="icon-menue d-flex">
+                        <div class="user">
+                            <div class="username d-center">
+                                <a href="#" class="nav-link d-center">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                    <div class="d-center flex-column ">
+                                        <h6  class="d-none d-sm-flex">م.إيمان فتحى</h6>
+                                        <small class="d-none d-sm-flex" style="margin-top: -10px;">مدير عام</small>
+                                    </div>
+                                    <img src="images/user-img.png" alt="user-img" class="rounded-circle ms-1" style="width:40px;height: 40px;">
+                                </a>
+                            </div>
                         </div>
-                        <img src="images/user-img.png" alt="user-img" class="rounded-circle ms-1" style="width:40px;height: 40px;">
-                    </a>
+                    <!-- //////////////////////////////////// -->
+                        <div class="icon-nav d-center">
+                            <a href="#" class="nav-link users">
+                                <i class="fa-solid fa-users fa-xl"></i>
+                            </a>
+                            <a href="#" class="nav-link Messages">
+                                <i class="fa-solid fa-comment fa-xl"></i>
+                            </a>
+                            <a href="#" class="nav-link notifications">
+                                <i class="fa-solid fa-bell fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         <!-- //////////////////////////////////// -->
-            <div class="ar-en">
-                <a href="#" class="nav-link d-center">
-                    <i class="fa-solid fa-angle-down fa-lg me-1"></i>
-                    <h6 class="d-inline">AR</h6>
-                </a>
-            </div>
-        <!-- //////////////////////////////////// -->
-        <div class="icon-nav d-center">
-            <a href="#" class="nav-link users">
-                <i class="fa-solid fa-users fa-xl"></i>
-            </a>
-            <a href="#" class="nav-link Messages">
-                <i class="fa-solid fa-comment fa-xl"></i>
-            </a>
-            <a href="#" class="nav-link notifications">
-                <i class="fa-solid fa-bell fa-xl"></i>
+        <div class="ar-en">
+            <a href="#" class="nav-link d-center">
+                <i class="fa-solid fa-angle-down fa-lg me-1"></i>
+                <h6 class="d-inline">AR</h6>
             </a>
         </div>
         <!-- //////////////////////////////////// -->
-        <div class="search d-md-flex d-none">
+        <div class="search d-flex ">
             <div class="icon-search">
                 <a href="#" class="nav-link">
                     <i class="fa-solid fa-magnifying-glass fa-xl"></i>
@@ -142,6 +149,7 @@
     </header>
 
     <div class="main-page">
+        <!-- start filter -->
         <div class="filter m-auto p-2 shadow">
             <form action="#" class="form-filter d-center">
                 <div class="branches shadow p-3  my-2">
@@ -181,7 +189,6 @@
                         <option>المحطات المرشحة الصغري</option>
                         <option>المحطات النقالى</option>
                         <option>المحطات الارتوازى</option>
-                        <option>المحطات المتوقفه</option>
                     </select>
                 </div>
                 <div class="date mx-4 shadow p-3 my-2">
@@ -203,16 +210,22 @@
                 </div>
             </form>
         </div>
-
-
+        <!-- end filter -->
 
         <!-- ////////////////// -->
+
+        <!-- start titile content -->
 
         <div class="title-cont d-center mt-1">
             <h4>الربع الثالث</h4>
         </div>
 
+        <!-- end titile content -->
+
         <!-- ////////////////// -->
+
+        <!-- start chartsjs -->
+
         <div class="content my-4">
             <div class="d-center flex-column">
                 <canvas id="myChart1"></canvas>
@@ -224,6 +237,9 @@
                 <canvas id="myChart2"></canvas>
             </div>
         </div>
+
+        <!-- end chartsjs -->
+
         <!-- //////////////////////// -->
     </div>
     <!-- Bootstrap 5 file css -->
