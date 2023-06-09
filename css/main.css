@@ -328,6 +328,6 @@ body{
 }
 @media (max-width:991px) {
     .main-page .content div{
-        height: 300px;
+        height: 250px;
     }
 }
