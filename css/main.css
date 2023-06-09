@@ -126,7 +126,7 @@ body{
         opacity: 0;
         top: 60px;
         right: -20px;
-
+        display:flex;
         z-index: 200;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
