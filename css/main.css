@@ -27,6 +27,7 @@ body{
 /* main-nav */
 .header .main-nav{
     margin-top: -8px;
+
     background: var(--secondary-color);
     position: fixed;
     z-index: 200;
@@ -319,7 +320,7 @@ body{
 }
 .main-page .content{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
     gap: 15px;
 }
 .main-page .content div{
@@ -328,6 +329,6 @@ body{
 }
 @media (max-width:991px) {
     .main-page .content div{
-        height: 250px;
+        height: 300px;
     }
 }
