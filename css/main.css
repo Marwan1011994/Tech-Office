@@ -43,10 +43,82 @@ body{
     min-height: 50px;
     position: relative;
 }
-@media (max-width:991px) {
-.header .user-menue{
-    margin-right: 15px;
+.header .username .div-hov,.header .icon-nav .div-icon .div-hov {
+    width: 200px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top:55px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
 }
+.header .username:hover .div-hov,.header .icon-nav .div-icon:hover .div-hov{
+    opacity: 1;
+    visibility: visible;
+}
+.header .icon-nav .div-icon .div-hov{
+    top:35px;
+    left: 0px;
+}
+.header .icon-nav .div-icon .div-hov .online::before{
+    content: "";
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    right: 0px;
+
+}
+.header .icon-nav .div-icon .div-hov .div-massage{
+    padding: 5px 0;
+    border-top: 2px solid var(--primary-color);
+    cursor: pointer;
+    position: relative;
+}
+.header .icon-nav .div-icon .div-hov .div-massage:after{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.header .icon-nav .div-icon .div-hov .div-massage:hover::after{
+    width: 100%;
+}
+
+.header .icon-nav .div-icon .div-hov {
+    width: max-content;
+}
+.header .icon-nav .div-icon .div-hov p{
+    width: 180px;
+    margin-right: 10px;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+     white-space: nowrap;
+     overflow: hidden;
+}
+.header .username .div-hov a{
+    text-decoration: none;
+    transition: 1s;
+}
+.header .username .div-hov a:hover{
+    padding-right: 10px;
+}
+
+@media (max-width:991px) {
+    .header .user-menue{
+        margin-right: 15px;
+    }
     .header .user-menue .sub-menue{
         position: absolute;
         visibility: hidden;
@@ -100,6 +172,9 @@ body{
     color: var(--color-txt);
 }
 /* ///////////////////////////////// */
+.header .icon-nav .div-icon{
+    position: relative;
+}
 .header .icon-nav .users,.header .icon-nav .Messages,.header .icon-nav .notifications{
     position: relative;
 }
@@ -113,7 +188,7 @@ body{
     background: var(--red-color);
     color: #fff;
     position: absolute;
-    top:5px;
+    top:-10px;
     right: 7px;
     animation: scale 1s linear  infinite alternate;
 }
@@ -249,5 +324,10 @@ body{
 }
 .main-page .content div{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    height: 350px;
+    height: 450px;
+}
+@media (max-width:991px) {
+    .main-page .content div{
+        height: 300px;
+    }
 }
