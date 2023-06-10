@@ -10,7 +10,7 @@ body{
     direction: rtl;
     background: #F0F0F0;
     color: var(--color-txt);
-    min-height: 2000px;
+   min-height: max-content;
     padding-bottom: 20px;
 }
 
