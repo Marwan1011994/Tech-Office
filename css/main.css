@@ -11,6 +11,7 @@ body{
     background: #F0F0F0;
     color: var(--color-txt);
     min-height: 2000px;
+    padding-bottom: 20px;
 }
 
 /* My Keyframes */
@@ -23,11 +24,11 @@ body{
 /* header-section */
 .header{
     margin-right: -10px;
+
 }
 /* main-nav */
 .header .main-nav{
     margin-top: -8px;
-
     background: var(--secondary-color);
     position: fixed;
     z-index: 200;
@@ -126,7 +127,6 @@ body{
         opacity: 0;
         top: 60px;
         right: -30px;
-
         z-index: 200;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
@@ -304,7 +304,13 @@ body{
     border-radius: 10px;
     
 }
-
+@media (max-width:355px) {
+    .filter{
+        width: 80%;
+        padding: 0;
+        
+    }
+}
 .filter .form-filter{
     flex-flow: wrap;
 }
@@ -321,35 +327,18 @@ body{
 }
 .main-page .content{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
-    gap: 15px;}
+    grid-template-columns: repeat( auto-fit, minmax(450px, 1fr));
+    gap: 15px;
+}
 .main-page .content div{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     height: 450px;
 }
-
-@media (max-width:991px) {
-
-
-
-
-
-
-
+@media (max-width:567px) {
+    .main-page .content{
+        grid-template-columns: repeat( auto-fit, minmax(100%, 1fr));
+    }
     .main-page .content div{
         height: 300px;
     }
 }
-@media (max-width:567px) {
- .main-page .content{
-
-
-
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
-
-}
-}
-      
-
-
-
