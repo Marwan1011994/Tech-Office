@@ -411,24 +411,356 @@
         <!-- start chartsjs -->
 
         <div class="content my-4">
+
+            <!-- start chart1 -->
             <div class="d-center flex-column">
                 <canvas id="myChart1"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart1" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط انتاج المحطات الربع الثالث</h5>
+                      <table>
+                        <tr>
+                            <td>متوسط المحطات المرشحة الكبري</td>
+                            <td>متوسط المحطات المرشحة الصغرى والنقالى</td>
+                            <td> متوسط المحطات الارتوازى</td>
+
+                        </tr>
+                        <tr>
+                            <td>442,403 <bdi>م3/يوم</bdi></td>
+                            <td>64,122 <bdi>م3/يوم</bdi></td>
+                            <td>148,068 <bdi>م3/يوم</bdi></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              
+                    <div>
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart1">
+                        عرض البيانات 
+                        </button>
+                    </div>
+
             </div>
-            <div class="d-center">
+
+            <!-- start chart2 -->
+            <div class="d-center flex-column">
                 <canvas id="myChart2"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart2" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط استهلاك الشبة والكلور والكهرباء للمحطات المرشحة الكبرى</h5>
+                      <table>
+                        <tr>
+                            <td></td>
+                            <td>اتريب المرشحة</td>
+                            <td>العبادلة المرشحة</td>
+                            <td>كوم اشفين المرشحة</td>
+                            <td>شبين القناطر المرشحة</td>
+                            <td>القناطر الخيرية المرشحة</td>
+                            <td>ابو زعبل المرشحة</td>
+                            <td>سرياقوس المرشحة</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الشبه جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكلور جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكهرباء ك.ت/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              
+                    <div>
+                        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart2">
+                        عرض البيانات 
+                        </button>
+                    </div>
+
             </div>
+
+            <!-- start chart3 -->
             <div class="d-center flex-column">
                 <canvas id="myChart3"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart3" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط استهلاك الشبة والكلور والكهرباء للمحطات المرشحة الكبرى</h5>
+                      <table>
+                        <tr>
+                            <td></td>
+                            <td>اتريب المرشحة</td>
+                            <td>العبادلة المرشحة</td>
+                            <td>كوم اشفين المرشحة</td>
+                            <td>شبين القناطر المرشحة</td>
+                            <td>القناطر الخيرية المرشحة</td>
+                            <td>ابو زعبل المرشحة</td>
+                            <td>سرياقوس المرشحة</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الشبه جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكلور جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكهرباء ك.ت/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              
+                    <div>
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart3">
+                        عرض البيانات 
+                        </button>
+                    </div>
+
             </div>
-            <div class="d-center">
+
+            <!-- start chart4 -->
+            <div class="d-center flex-column">
                 <canvas id="myChart4"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart4" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط استهلاك الشبة والكلور والكهرباء للمحطات المرشحة الكبرى</h5>
+                      <table>
+                        <tr>
+                            <td></td>
+                            <td>اتريب المرشحة</td>
+                            <td>العبادلة المرشحة</td>
+                            <td>كوم اشفين المرشحة</td>
+                            <td>شبين القناطر المرشحة</td>
+                            <td>القناطر الخيرية المرشحة</td>
+                            <td>ابو زعبل المرشحة</td>
+                            <td>سرياقوس المرشحة</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الشبه جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكلور جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكهرباء ك.ت/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              
+                    <div>
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart4">
+                        عرض البيانات 
+                        </button>
+                    </div>
+
             </div>
+
+            <!-- start chart4 -->
             <div class="d-center flex-column">
                 <canvas id="myChart5"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart5" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط استهلاك الشبة والكلور والكهرباء للمحطات المرشحة الكبرى</h5>
+                      <table>
+                        <tr>
+                            <td></td>
+                            <td>اتريب المرشحة</td>
+                            <td>العبادلة المرشحة</td>
+                            <td>كوم اشفين المرشحة</td>
+                            <td>شبين القناطر المرشحة</td>
+                            <td>القناطر الخيرية المرشحة</td>
+                            <td>ابو زعبل المرشحة</td>
+                            <td>سرياقوس المرشحة</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الشبه جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكلور جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكهرباء ك.ت/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+              
+                    <div>
+                        <button class="btn btn-primary mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart5">
+                        عرض البيانات 
+                        </button>
+                    </div>
+
             </div>
-            <div class="d-center">
+
+            <!-- start chart6 -->
+            <div class="d-center flex-column">
                 <canvas id="myChart6"></canvas>
+
+                <div class="offcanvas offcanvas-bottom" id="chart6" style="height: 90vh;">
+
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="offcanvas"></button>
+
+                    <div class="offcanvas-body d-center flex-column">
+                        <h5 class="py-2">متوسط استهلاك الشبة والكلور والكهرباء للمحطات المرشحة الكبرى</h5>
+                      <table>
+                        <tr>
+                            <td></td>
+                            <td>اتريب المرشحة</td>
+                            <td>العبادلة المرشحة</td>
+                            <td>كوم اشفين المرشحة</td>
+                            <td>شبين القناطر المرشحة</td>
+                            <td>القناطر الخيرية المرشحة</td>
+                            <td>ابو زعبل المرشحة</td>
+                            <td>سرياقوس المرشحة</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الشبه جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكلور جم/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                        <tr>
+                            <td>متوسط استهلاك الكهرباء ك.ت/م3/يوم</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                            <td>22.5</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button class="btn btn-primary mt-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#chart6">
+                      عرض البيانات 
+                    </button>
+                  </div>
+
             </div>
+
         </div>
 
         <!-- end chartsjs -->

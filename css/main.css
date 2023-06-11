@@ -10,7 +10,7 @@ body{
     direction: rtl;
     background: #F0F0F0;
     color: var(--color-txt);
-   min-height: max-content;
+    min-height: max-content;
     padding-bottom: 20px;
 }
 
@@ -330,9 +330,20 @@ body{
     grid-template-columns: repeat( auto-fit, minmax(550px, 1fr));
     gap: 15px;
 }
-.main-page .content div{
+.main-page .content > div{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding:5px 10px 10px ;
     height: 450px;
+}
+.main-page .content > div canvas{
+    height: 85% !important;
+}
+.main-page .content > div div table td{
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid var(--main-color);
 }
 @media (max-width:567px) {
     .main-page .content{
