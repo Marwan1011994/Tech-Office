@@ -260,7 +260,7 @@
                  <!-- //////////////////////////////////// -->
 
                     <li class="nav-item">
-                        <a href="watstations.html" class="nav-link shadow active-nav">
+                        <a href="watstations.html" class="nav-link shadow ">
                             <i class="fa-solid fa-water fa-2xl"></i>
                             <span>محطات المياه</span>
                         </a>
@@ -268,7 +268,7 @@
                  <!-- //////////////////////////////////// -->
 
                     <li class="nav-item">
-                        <a href="waststations.html" class="nav-link shadow">
+                        <a href="waststations.html" class="nav-link shadow active-nav">
                             <i class="fa-solid fa-recycle fa-2xl"></i>
                             <span >محطات الصرف</span>
                         </a>
@@ -315,7 +315,7 @@
     </header>
 
     <div class="main-page">
-        <h1 class="d-center py-3">محطات المياه</h1>
+        <h1 class="d-center py-3">محطات الصرف</h1>
         <!-- start filter -->
         <div class="filter m-auto p-2 shadow">
             <h2 class="d-center py-3">Filter Data</h2>
@@ -404,30 +404,22 @@
                     <span>15</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات مرشحة كبري</h5>
+                    <h5>محطات معالجة</h5>
                     <span>1</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات مرشحة صغري</h5>
+                    <h5>محطات الرفع الرئيسية</h5>
                     <span>1</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات نقالى </h5>
+                    <h5>محطات الرفع الفرعية </h5>
                     <span>3</span>
                 </div>
-                <div class="shadow d-center flex-column">
-                    <h5>محطات ارتوازى </h5>
-                    <span>9</span>
-                </div>
-                <div class="shadow d-center flex-column">
-                    <h5>محطات متوقفه </h5>
-                    <span>7</span>
-                </div>
-
             </div>
 
             <div class="datatable table-responsive mt-4" >
                 <table class="table table-hover table-bordered text-center">
+                    <caption>محطات المعالجة</caption>
                     <thead class="table-dark">
                         <tr>
                             <th>م</th>
@@ -435,6 +427,7 @@
                             <th>اسم المحطه</th>
                             <th>نوع المحطه</th>
                             <th>الفرع</th>
+                            <th>اسم المصرف</th>
                             <th>الطاقة التصميمية (م3/يوم)</th>
                             <th>متوسط الطاقة الفعلية (م3/يوم)</th>
                             <th>نسبة التشغيل %</th>
@@ -445,236 +438,336 @@
                     <tbody  class="table-light">
                         <tr>
                             <td>1</td>
-                            <td>BCI-01-BF-001</td>
-                            <td>اتريب المرشحة</td>
-                            <td>مرشحة كبري</td>
-                            <td>مدينة بنها</td>
-                            <td>68,000</td>
-                            <td>56,213</td>
-                            <td>83</td>
+                            <td>KSH-01-TS-005</td>
+                            <td>كفر الشهاوي والتوسعات</td>
+                            <td>معالجة</td>
+                            <td>كفر شكر</td>
+                            <td>الولجا</td>
+                            <td>30,000</td>
+                            <td>16,857</td>
+                            <td>56</td>
+                            <td>
+                                <div class="note">
+                                    <i class="fa-solid fa-circle-info fa-xl"></i>
+                                    <div class="shadow">جاري استكمال اعمال الاحلال والتجديد وتم اعداد مقايسة لاعادة تأهيل المحطه</div>
+                                </div>
+                            </td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="6">اجمالى محطات المعالجه</td>
+                            <td>30,000</td>
+                            <td>16,857</td>
+                            <td>56</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- ////////////////// -->
+
+                <table class="table table-hover table-bordered text-center">
+                    <caption>محطات الرفع الرئيسية</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>م</th>
+                            <th>كود المحطه</th>
+                            <th>اسم المحطه</th>
+                            <th>نوع المحطه</th>
+                            <th>الفرع</th>
+                            <th>اسم المصرف</th>
+                            <th>الطاقة التصميمية (م3/يوم)</th>
+                            <th>متوسط الطاقة الفعلية (م3/يوم)</th>
+                            <th>نسبة التشغيل %</th>
+                            <th>ملاحظات</th>
+                            <th>عرض الداتا</th>
+                        </tr>
+                    </thead>
+                    <tbody  class="table-light">
+                        <tr>
+                            <td>1</td>
+                            <td>KSH-02-MS-019</td>
+                            <td>الرئيسية رقم 2</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>كفر الشهاوي</td>
+                            <td>13,800</td>
+                            <td>2,688</td>
+                            <td>19.48</td>
                             <td>-----</td>
                             <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>BCI-02-SF-001</td>
-                            <td> عزبة الزراعة</td>
-                            <td>مرشحة صغري</td>
-                            <td>مدينة بنها</td>
-                            <td>8,600</td>
-                            <td>2,340</td>
-                            <td>27</td>
+                            <td>KSH-03-MS-020</td>
+                            <td>الرئيسية رقم 3</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>كفر الشهاوى</td>
+                            <td>10,368</td>
+                            <td>2,747</td>
+                            <td>26.49</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>BCI-03-CM-001</td>
-                            <td>الفيلات</td>
-                            <td>كومباكت</td>
-                            <td>مدينة بنها</td>
-                            <td>7,700</td>
-                            <td>1,399</td>
-                            <td>18</td>
+                            <td>KSH-04-MS-021</td>
+                            <td>تصفا</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>كفر الشهاوي</td>
+                            <td>12,528</td>
+                            <td>2,923</td>
+                            <td>23.33</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>BCI-04-CM-002</td>
-                            <td>بنك فيصل</td>
-                            <td>كومباكت</td>
-                            <td>مدينة بنها</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                                <div class="note">
-                                    <i class="fa-solid fa-circle-info fa-xl"></i>
-                                    <div class="shadow">تم تكهين المحطة فى شهر 7-2021</div>
-                                </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td>KSH-05-MS-022</td>
+                            <td>اسنيت الرئيسية</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>توسعات كفر الشهاوي</td>
+                            <td>6,306</td>
+                            <td>2,085</td>
+                            <td>33.06</td>
+                            <td>-----</td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>BCI-05-CM-003</td>
-                            <td>الحرس الوطنى</td>
-                            <td>كومباكت</td>
-                            <td>مدينة بنها</td>
-                            <td>7,700</td>
-                            <td>1,087</td>
-                            <td>14</td>
+                            <td>KSH-06-MS-023</td>
+                            <td>المنشأة الصغري</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>توسعات كفر الشهاوي</td>
+                            <td>4,665</td>
+                            <td>2,621</td>
+                            <td>56.18</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>BCI-06-AR-001</td>
-                            <td>عزبة المربع</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>3,456</td>
-                            <td>2,159</td>
-                            <td>62</td>
+                            <td>KSH-07-MS-024</td>
+                            <td>كفر الشهاوي</td>
+                            <td>رفع رئيسية</td>
+                            <td>كفر شكر</td>
+                            <td>توسعات كفر الشهاوي</td>
+                            <td>13,133</td>
+                            <td>715</td>
+                            <td>5.44</td>
                             <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">احتياطى</div>
-                              </div>
+                                <div class="note">
+                                    <i class="fa-solid fa-circle-info fa-xl"></i>
+                                    <div class="shadow">المحطة تخدم قريتها فقط وسيتم دخول خدمة البلاد المجاوره عليها</div>
+                                </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary" >عرض</span></td>
                         </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>BCI-07-AR-002</td>
-                            <td>عزبة الزراعة</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>3,456</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">تم تركيب الطلمبة بعد اتمام صيانتها وجارى تطهير وتنشيط البئر</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="6">اجمالى محطات الرفع الرئيسية</td>
+                            <td>60,800</td>
+                            <td>13,779</td>
+                            <td>23</td>
+                            <td></td>
+                            <td></td>
                         </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>BCI-08-AR-003</td>
-                            <td>كفر السرايا</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">تم تكهين المحطة فى شهر 7-2021</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>BCI-09-AR-004</td>
-                            <td>المنشية</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">نضوب البئر وعدم مطابقة العينات</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>BCI-10-AR-005</td>
-                            <td>الصدر</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">عينات الابار غير مطابقة وتم تكهين المحطة فى شهر 7-2021</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>BCI-11-AR-006</td>
-                            <td>الحرس الوطنى</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>3,456</td>
-                            <td>271</td>
-                            <td>8</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">احتياطى</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>BCI-12-AR-007</td>
-                            <td>تحسين الصحة</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">عينات الابار غير مطابقة وتم تكهين المحطة فى شهر 7-2021</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>BCI-13-AR-008</td>
-                            <td>الفيلات</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>3,456</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">جارى اعمال احلال وتجديد وتم ارسال موتور الطلمبة لعمل صيانة له</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>BCI-14-AR-009</td>
-                            <td>بنك فيصل</td>
-                            <td>ارتوازى</td>
-                            <td>مدينة بنها</td>
-                            <td>3,456</td>
-                            <td>271</td>
-                            <td>8</td>
-                            <td>
-                              <div class="note">
-                                <i class="fa-solid fa-circle-info fa-xl"></i>
-                                <div class="shadow">احتياطى</div>
-                              </div>
-                            </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
+                    </tfoot>
+                </table>
+                <!-- ////////////////// -->
+
+                <div class="datatable table-responsive mt-4" >
+                    <table class="table table-hover table-bordered text-center">
+                        <caption>محطات الرفع الفرعية</caption>
+                        <thead class="table-dark">
+                            <tr>
+                                <th>م</th>
+                                <th>كود المحطه</th>
+                                <th>اسم المحطه</th>
+                                <th>نوع المحطه</th>
+                                <th>الفرع</th>
+                                <th>اسم المصرف</th>
+                                <th>الطاقة التصميمية (م3/يوم)</th>
+                                <th>متوسط الطاقة الفعلية (م3/يوم)</th>
+                                <th>نسبة التشغيل %</th>
+                                <th>ملاحظات</th>
+                                <th>عرض الداتا</th>
+                            </tr>
+                        </thead>
+                        <tbody  class="table-light">
+                            <tr>
+                                <td>1</td>
+                                <td>KSH-08-SS-020</td>
+                                <td>الرفع رقم 1</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>الرئسية رقم 2</td>
+                                <td>6,912</td>
+                                <td>2,486</td>
+                                <td>35.97</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>KSH-09-SS-021</td>
+                                <td>البقاشين</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>الرئيسية رقم 3</td>
+                                <td>3,456</td>
+                                <td>1,210</td>
+                                <td>35.01</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>KSH-10-SS-022</td>
+                                <td>كفر تصفا</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>تصفا</td>
+                                <td>9,504</td>
+                                <td>2,495</td>
+                                <td>26.25</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>KSH-11-SS-023</td>
+                                <td>اسنيت الفرعية</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>اسنيت</td>
+                                <td>1,900</td>
+                                <td>882</td>
+                                <td>46.42</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>KSH-13-SS-025</td>
+                                <td>المنشأة الكبري</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>المنِشأة الصغري</td>
+                                <td>3,024</td>
+                                <td>1,058</td>
+                                <td>34,99</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>KSH-14-SS-026</td>
+                                <td>الصفين</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>المنِشأة الصغري</td>
+                                <td>1,814</td>
+                                <td>609</td>
+                                <td>33.57</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>KSH-15-SS-027</td>
+                                <td>الزمرونية</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>كفر تصفا</td>
+                                <td>2,937</td>
+                                <td class=" text-primary">129</td>
+                                <td>4.39</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>KSH-16-SS-028</td>
+                                <td>عزبة زكريا</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>اسنيت الفرعية</td>
+                                <td>5,184</td>
+                                <td class=" text-primary">151</td>
+                                <td>2.91</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>KSH-17-SS-029</td>
+                                <td>كفر على شرف الدين</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>اسنيت الرئيسية</td>
+                                <td>4,147</td>
+                                <td>968</td>
+                                <td>23.34</td>
+                                <td>-----</td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>KSH-18-SS-030</td>
+                                <td>عزبة الشيخه فاطمه</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>اسنيت الرئيسية</td>
+                                <td>2,160</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>
+                                    <div class="note">
+                                        <i class="fa-solid fa-circle-info fa-xl"></i>
+                                        <div class="shadow">جاري العمل على استلام المحطه</div>
+                                    </div>
+                                </td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>KSH-18-SS-030</td>
+                                <td>كفور عامر ورضوان</td>
+                                <td>رفع فرعية</td>
+                                <td>كفر شكر</td>
+                                <td>كفر على شرف الدين</td>
+                                <td>4,493</td>
+                                <td class=" text-primary">22</td>
+                                <td>0.49</td>
+                                <td>
+                                    <div class="note">
+                                        <i class="fa-solid fa-circle-info fa-xl"></i>
+                                        <div class="shadow">تم استلام المحطه فى شهر 3</div>
+                                    </div>
+                                </td>
+                                <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            </tr>
+                        </tbody>
                         <tfoot>
                             <tr class="table-primary">
-                                <td colspan="5">الاجمالى</td>
-                                <td>109,280</td>
-                                <td>63,740</td>
-                                <td>58</td>
+                                <td colspan="6">اجمالى محطات المعالجه</td>
+                                <td>45,531</td>
+                                <td>9,708</td>
+                                <td>21</td>
                                 <td></td>
                                 <td></td>
                             </tr>
                         </tfoot>
-                    </tbody>
-                </table>
+                    </table>
             </div>
-
 
         </div> 
 
@@ -687,3 +780,4 @@
     <script src="js/mainScript.js"></script>
 </body>
 </html>
+

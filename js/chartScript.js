@@ -1,4 +1,6 @@
 
+Chart.defaults.color = '#40128B';
+
 
 // كميات المياه المنتجه من جميع المحطات
 const allStations = document.getElementById('myChart1');

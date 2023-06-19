@@ -5,6 +5,7 @@
  --primary-color:#DD58D6;
  --secondary-color:#F2F2F2;
  --red-color:#f00;
+ --white-color:#fff;
 }
 body{
     direction: rtl;
@@ -295,15 +296,15 @@ body{
     margin-top: 50px;
     padding: 10px;
 }
-/* end main-page */
+
 
 /* start filter */
 
 .filter{
     width: 100%;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
+
 @media (max-width:355px) {
     .filter{
         width: 80%;
@@ -338,6 +339,17 @@ body{
 .main-page .content > div canvas{
     height: 85% !important;
 }
+.main-page .content > div .chart{
+    width: 90%;
+    min-height: 300px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    position: fixed;
+    bottom:0;
+    left: 5%;
+    right: 5%;
+    background: var(--secondary-color);
+}
 .main-page .content > div div table td{
     width: max-content;
     height: max-content;
@@ -353,3 +365,90 @@ body{
         height: 300px;
     }
 }
+/* end main-page */
+
+/*/////////////////////////////////////////////////// */
+
+/*watstations page */
+
+/*/////////////////////////////////////////////////// */
+
+.main-page .cont-watst .card-cont{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+.main-page .cont-watst .card-cont > div{
+    min-height: max-content;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.main-page .cont-watst .card-cont > div:hover{
+    transform: scale(1.05);
+}
+.main-page .cont-watst .card-cont > div h5{
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.main-page .cont-watst .card-cont > div span{
+    font-weight: bold;
+    text-align: center;
+    min-width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: var(--white-color);
+}
+
+/*/////////////////////////////////////////////////// */
+
+/*/////////////////////////////////////////////////// */
+
+.main-page .cont-watst .datatable{
+    padding-bottom:20px;
+}
+.main-page table{
+    caption-side: top;
+}
+.main-page table caption{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-page .cont-watst table td,.main-page .cont-watst table th{
+    white-space: nowrap;
+}
+.main-page .cont-watst table .note{
+    position: relative;
+}
+.main-page .cont-watst table .note div{
+    width: 180px;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    position: absolute;
+    top: 27px;
+    left:-8px;
+    background-color: var(--white-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 50;
+}
+.main-page .cont-watst table .note:hover div{
+    visibility: visible;
+    opacity: 1;
+}
+/*/////////////////////////////////////////////////// */
+
+
+/*waststations page */
+
+/*/////////////////////////////////////////////////// */
+
+
+
+
+
