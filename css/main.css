@@ -12,9 +12,30 @@ body{
     background: #F0F0F0;
     color: var(--color-txt);
     min-height: max-content;
-    padding-bottom: 20px;
 }
-
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-txt);
+    outline: 1px solid var(--primary-color);
+    
+}
+::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}
+table th{
+    white-space: nowrap;
+}
+table{
+    caption-side: top;
+}
+table caption{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
 /* My Keyframes */
 .d-center{
  display: flex;
@@ -409,17 +430,6 @@ body{
 .main-page .cont-watst .datatable{
     padding-bottom:20px;
 }
-.main-page table{
-    caption-side: top;
-}
-.main-page table caption{
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-.main-page .cont-watst table td,.main-page .cont-watst table th{
-    white-space: nowrap;
-}
 .main-page .cont-watst table .note{
     position: relative;
 }
@@ -448,7 +458,100 @@ body{
 
 /*/////////////////////////////////////////////////// */
 
+/*  show and hidden div (data) */
+.showdiv{
+    width: 100vw;
+    height: 100vh;
+    background: #40128B50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+}
+
+.showdiv > div{
+    width: 95%;
+    height: 95%;
+    background: var(--secondary-color);
+    border-radius:0px 20px 20px 0px;
+    overflow: auto;
+}
 
 
+/*/////////////////////////////////////////////////// */
+
+/*login page */
+
+/*/////////////////////////////////////////////////// */
+
+.parentlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.parentlog .left, .parentlog .right{
+    width: 50%;
+    height: 100vh;
+}
+.parentlog .left{
+    background: var(--secondary-color);
+}
+.parentlog .right{
+    background: var(--color-txt);
+}
+.parentlog .login{
+    width: 400px;
+    height: 500px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.parentlog .login h2{
+    margin: 20px 0;
+    font-weight: bold;
+}
+.parentlog .login input{
+    margin: 10px 0;
+}
+.parentlog .login input[type="button"],.login input[type="submit"]{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.parentlog .login a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.parentlog .login a:hover{
+    text-decoration: underline;
+}
+.parentlog .login .div-id,.parentlog .login .div-pass{
+    position: relative;
+}
+.parentlog .login  i{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+}
+.parentlog .login  .wrongid,.parentlog .login  .wrongpass{
+    cursor: pointer;
+}
+@media (max-width:567px) {
+    .parentlog .login{
+        width: 40vmax;
+        height: 70vmax;
+    }
+    .parentlog .login input[type="button"],.login input[type="submit"]{
+        font-size: 18px;
+    }
+    .parentlog .login a{
+        font-size: 14px;
+    }
+}
+/*/////////////////////////////////////////////// */
 
 

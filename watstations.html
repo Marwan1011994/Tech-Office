@@ -64,7 +64,7 @@
                                         </a>
                                     </div>
                                     <div class="py-2" style="border-top: 1px solid #9336B4;">
-                                        <a href="#">
+                                        <a href="index.html">
                                             <i class="fa-solid fa-right-from-bracket"></i>
                                         <small class="ms-2">تسجيل الخروج</small>
                                         </a>
@@ -252,7 +252,7 @@
 
                  <!-- //////////////////////////////////// -->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link shadow">
+                        <a href="indicators.html" class="nav-link shadow">
                             <i class="fa-solid fa-chart-pie fa-2xl"></i>
                             <span >مؤشرات الاداء</span>
                         </a>
@@ -404,23 +404,23 @@
                     <span>15</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات مرشحة كبري</h5>
+                    <h5>محطات المرشحة كبري</h5>
                     <span>1</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات مرشحة صغري</h5>
+                    <h5>محطات المرشحة صغري</h5>
                     <span>1</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات نقالى </h5>
+                    <h5>محطات النقالى </h5>
                     <span>3</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات ارتوازى </h5>
+                    <h5>محطات الارتوازى </h5>
                     <span>9</span>
                 </div>
                 <div class="shadow d-center flex-column">
-                    <h5>محطات متوقفه </h5>
+                    <h5>محطات المتوقفه </h5>
                     <span>7</span>
                 </div>
 
@@ -428,6 +428,7 @@
 
             <div class="datatable table-responsive mt-4" >
                 <table class="table table-hover table-bordered text-center">
+                    <caption>محطات مرشحة كبري</caption>
                     <thead class="table-dark">
                         <tr>
                             <th>م</th>
@@ -453,8 +454,38 @@
                             <td>56,213</td>
                             <td>83</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary" >عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()" >عرض</span></td>
                         </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="5">الاجمالى</td>
+                            <td>68,000</td>
+                            <td>56,000</td>
+                            <td>83</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- ///////////////////////////// -->
+                <table class="table table-hover table-bordered text-center">
+                    <caption>محطات مرشحة صغري</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>م</th>
+                            <th>كود المحطه</th>
+                            <th>اسم المحطه</th>
+                            <th>نوع المحطه</th>
+                            <th>الفرع</th>
+                            <th>الطاقة التصميمية (م3/يوم)</th>
+                            <th>متوسط الطاقة الفعلية (م3/يوم)</th>
+                            <th>نسبة التشغيل %</th>
+                            <th>ملاحظات</th>
+                            <th>عرض الداتا</th>
+                        </tr>
+                    </thead>
+                    <tbody  class="table-light">
                         <tr>
                             <td>2</td>
                             <td>BCI-02-SF-001</td>
@@ -465,8 +496,38 @@
                             <td>2,340</td>
                             <td>27</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="5">الاجمالى</td>
+                            <td>8,600</td>
+                            <td>2,340</td>
+                            <td>27</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- ///////////////////////////// -->
+                <table class="table table-hover table-bordered text-center">
+                    <caption>محطات نقالي</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>م</th>
+                            <th>كود المحطه</th>
+                            <th>اسم المحطه</th>
+                            <th>نوع المحطه</th>
+                            <th>الفرع</th>
+                            <th>الطاقة التصميمية (م3/يوم)</th>
+                            <th>متوسط الطاقة الفعلية (م3/يوم)</th>
+                            <th>نسبة التشغيل %</th>
+                            <th>ملاحظات</th>
+                            <th>عرض الداتا</th>
+                        </tr>
+                    </thead>
+                    <tbody  class="table-light">
                         <tr>
                             <td>3</td>
                             <td>BCI-03-CM-001</td>
@@ -477,7 +538,7 @@
                             <td>1,399</td>
                             <td>18</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -494,7 +555,7 @@
                                     <div class="shadow">تم تكهين المحطة فى شهر 7-2021</div>
                                 </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -506,8 +567,39 @@
                             <td>1,087</td>
                             <td>14</td>
                             <td>-----</td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="5">الاجمالى</td>
+                            <td>15,400</td>
+                            <td>2,486</td>
+                            <td>16</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- ///////////////////////////// -->
+                <table class="table table-hover table-bordered text-center">
+                    <caption>محطات ارتوازي</caption>
+                    <thead class="table-dark">
+                        <tr>
+                            <th>م</th>
+                            <th>كود المحطه</th>
+                            <th>اسم المحطه</th>
+                            <th>نوع المحطه</th>
+                            <th>الفرع</th>
+                            <th>الطاقة التصميمية (م3/يوم)</th>
+                            <th>متوسط الطاقة الفعلية (م3/يوم)</th>
+                            <th>نسبة التشغيل %</th>
+                            <th>ملاحظات</th>
+                            <th>عرض الداتا</th>
+                        </tr>
+                    </thead>
+                    <tbody  class="table-light">
+
                         <tr>
                             <td>6</td>
                             <td>BCI-06-AR-001</td>
@@ -523,7 +615,7 @@
                                 <div class="shadow">احتياطى</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>7</td>
@@ -540,7 +632,7 @@
                                 <div class="shadow">تم تركيب الطلمبة بعد اتمام صيانتها وجارى تطهير وتنشيط البئر</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>8</td>
@@ -557,7 +649,7 @@
                                 <div class="shadow">تم تكهين المحطة فى شهر 7-2021</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>9</td>
@@ -574,7 +666,7 @@
                                 <div class="shadow">نضوب البئر وعدم مطابقة العينات</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>10</td>
@@ -591,7 +683,7 @@
                                 <div class="shadow">عينات الابار غير مطابقة وتم تكهين المحطة فى شهر 7-2021</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>11</td>
@@ -608,7 +700,7 @@
                                 <div class="shadow">احتياطى</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>12</td>
@@ -625,7 +717,7 @@
                                 <div class="shadow">عينات الابار غير مطابقة وتم تكهين المحطة فى شهر 7-2021</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>13</td>
@@ -642,7 +734,7 @@
                                 <div class="shadow">جارى اعمال احلال وتجديد وتم ارسال موتور الطلمبة لعمل صيانة له</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
                         </tr>
                         <tr>
                             <td>14</td>
@@ -659,26 +751,255 @@
                                 <div class="shadow">احتياطى</div>
                               </div>
                             </td>
-                            <td><span class="btn btn-outline-primary">عرض</span></td>
-                        </tr>
-                        <tfoot>
-                            <tr class="table-primary">
-                                <td colspan="5">الاجمالى</td>
-                                <td>109,280</td>
-                                <td>63,740</td>
-                                <td>58</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tfoot>
+                            <td><span class="btn btn-outline-primary"  onclick="showElement()">عرض</span></td>
+                        </tr>                        
                     </tbody>
+                    <tfoot>
+                        <tr class="table-primary">
+                            <td colspan="5">الاجمالى</td>
+                            <td>17,280</td>
+                            <td>2,701</td>
+                            <td>16</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
-
 
         </div> 
 
     </div>
+
+        <!-- /////////////////////// show and hidden -->
+
+        <div class="showdiv  d-center" hidden>
+            <div class="p-3">
+                <button onclick="hiddenElement()" class="btn btn-outline-primary fw-bold">Close</button>
+                <div class="data p-4">
+                    <!-- ////////////////// start info-data div-->
+                    <h4 class="text-center mb-4">قاعدة بيانات محطة مياه اتريب المرشحه</h4>
+                    <div class="info-data table-responsive">
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>كود المحطه</th>
+                                    <th>اسم المحطه</th>
+                                    <th>نوع المحطه</th>
+                                    <th>المركز / الحي</th>
+                                    <th>نطاق الخدمة</th>
+                                    <th>جهة التشغيل</th>
+                                    <th>سنة دخول الخدمة</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr>
+                                    <td>BCI-01-BF-001</td>
+                                    <td>الرئيسية المرشحة بأتريب</td>
+                                    <td>مرشحة كبري</td>
+                                    <td>مدينة بنها</td>
+                                    <td>مدينة بنها بالكامل وبعض القرى القريبة من مدينة بنها مثل (الرملة + طحلة + ورورة+ كفر سعد+ شبلنجة + كفر مويس)</td>
+                                    <td>الشركة</td>
+                                    <td>1998</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                  <th>مصدر مياه المأخذ</th>
+                                    <th>نوع المأخذ</th>
+                                    <th>بيارة العكرة</th>
+                                    <th>مساحة المحطة</th>
+                                    <th>سور المحطه</th>
+                                    <th>حالة المحطه</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr>
+                                  <td>الرياح التوفيقي</td>
+                                    <td>شاطئى</td>
+                                    <td>----</td>
+                                    <td>----</td>
+                                    <td>----</td>
+                                    <td>----</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                  <th colspan="8"> الطلمبات </th>
+                                  <th colspan="4"> عداد القياس </th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr class="table-dark">
+                                    <td>الغرض</td>
+                                    <td>الطاقة التصميمية</td>
+                                    <td>العدد</td>
+                                    <td>النوع</td>
+                                    <td>التصرف</td>
+                                    <td>الماركة</td>
+                                    <td>الرافع (م)</td>
+                                    <td>الكفاءة</td>
+                                    <td>الحالة</td>
+                                    <td>النوع</td>
+                                    <td>الماركة</td>
+                                    <td>سنة التركيب</td>
+                                </tr>
+                                <tr>
+                                    <td>الطرد</td>
+                                    <td>68,000</td>
+                                    <td>6</td>
+                                    <td>افقية</td>
+                                    <td>200</td>
+                                    <td>Ksb3,Msa3</td>
+                                    <td>60</td>
+                                    <td>85</td>
+                                    <td>جيدة</td>
+                                    <td>التراسونيك</td>
+                                    <td>كاترونك</td>
+                                    <td>----</td>
+                                </tr>
+                                <tr>
+                                    <td>العكرة</td>
+                                    <td>68,000</td>
+                                    <td>6</td>
+                                    <td>افقية</td>
+                                    <td>220</td>
+                                    <td>Ksb3,Msa4</td>
+                                    <td>18</td>
+                                    <td>85</td>
+                                    <td>جيدة</td>
+                                    <td>التراسونيك</td>
+                                    <td>كاترونك</td>
+                                    <td>----</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                  <th colspan="4"> الخزان </th>
+                                  <th colspan="3"> مخارج المحطة </th>
+                                  <th colspan="4"> المروقات </th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr class="table-dark">
+                                    <td>العدد</td>
+                                    <td>سعة م3</td>
+                                    <td>النوع</td>
+                                    <td>الحالة</td>
+                                    <td>العدد</td>
+                                    <td>القطر (مم)</td>
+                                    <td>النوع</td>
+                                    <td>العدد</td>
+                                    <td>حجم المروق</td>
+                                    <td>قطر الدخول (مم)</td>
+                                    <td>قطر الخروج (مم)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>4000 , 500</td>
+                                    <td>ارضي</td>
+                                    <td>يعمل</td>
+                                    <td>1</td>
+                                    <td>800</td>
+                                    <td>زهر مرن</td>
+                                    <td>4</td>
+                                    <td>3235</td>
+                                    <td>1000</td>
+                                    <td>1000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                  <th colspan="4"> طلمبات حقن الكلور </th>
+                                  <th colspan="4">طلمبات حقن الشبة</th>
+                                  <th colspan="4">المرشحات</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr class="table-dark">
+                                    <td>العدد</td>
+                                    <td>التصرف (ل/ث)</td>
+                                    <td>الماركة</td>
+                                    <td>الكفاءة %</td>
+                                    <td>العدد</td>
+                                    <td>التصرف</td>
+                                    <td>الماركة</td>
+                                    <td>الكفاءة %</td>
+                                    <td>العدد</td>
+                                    <td>حجم المرشح</td>
+                                    <td>قطر الدخول</td>
+                                    <td>قطر الخروج</td>
+                                </tr>
+                                <tr>
+                                    <td>2 (ابتدائي)</td>
+                                    <td>3.6</td>
+                                    <td>----</td>
+                                    <td rowspan="2" class="pt-4">90</td>
+                                    <td rowspan="2" class="pt-4">4</td>
+                                    <td rowspan="2" class="pt-4">1000</td>
+                                    <td rowspan="2" class="pt-4">Hauka</td>
+                                    <td rowspan="2" class="pt-4">85</td>
+                                    <td rowspan="2" class="pt-4">10</td>
+                                    <td rowspan="2" class="pt-4">200</td>
+                                    <td rowspan="2" class="pt-4">350</td>
+                                    <td rowspan="2" class="pt-4">300</td>
+                                </tr>
+                                <tr>
+                                    <td>2 (نهائي)</td>
+                                    <td>0.83</td>
+                                    <td>----</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                  <th colspan="5"> طلمبات الغسيل </th>
+                                  <th colspan="4">بلاورات الهواء</th>
+                                </tr>
+                            </thead>
+                            <tbody  class="table-light">
+                                <tr class="table-dark">
+                                    <td>العدد</td>
+                                    <td>التصرف (ل/ث)</td>
+                                    <td>الرافع</td>
+                                    <td>الماركة</td>
+                                    <td>الكفاءة %</td>
+                                    <td>العدد</td>
+                                    <td>التصرف م3/س</td>
+                                    <td>الماركة</td>
+                                    <td>الكفاءة %</td>
+                                </tr>
+                                <tr >
+                                    <td>2</td>
+                                    <td>417</td>
+                                    <td>41720</td>
+                                    <td>Sigma</td>
+                                    <td>85</td>
+                                    <td>2</td>
+                                    <td><bdi>Bar</bdi> 6</td>
+                                    <td>SBR300</td>
+                                    <td>85</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- /////////// end data div -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- /////////////////////////////////////// -->
+
     <!-- Bootstrap 5 file css -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap 5 link -->
@@ -687,3 +1008,53 @@
     <script src="js/mainScript.js"></script>
 </body>
 </html>
+
+
+                   <!-- <div class="d-center">
+                        <span class="badge bg-success mb-1">كود المحطه</span>
+                        <span class="badge bg-primary">BCI-14-AR-009</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">اسم المحطه</span>
+                        <span class="badge bg-primary">المرشحة الرئيسية بأتريب</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1"> المركز / الحي</span>
+                        <span class="badge bg-primary">مدينة بنها</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">نطاق الخدمه</span>
+                        <span class="badge bg-primary">مدينة بنها بالكامل وبعض القرى القريبة من مدينة بنها مثل (الرملة + طحلة + ورورة+ كفر سعد+ شبلنجة + كفر مويس)</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">جهة التشغيل</span>
+                        <span class="badge bg-primary">الشركة</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">سنة دخول الخدمة</span>
+                        <span class="badge bg-primary">1998</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">مصدر مياه المأخذ </span>
+                        <span class="badge bg-primary">الرياح التوفيقى</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">نوع المأخذ</span>
+                        <span class="badge bg-primary">شاطئى</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">كود المحطه</span>
+                        <span class="badge bg-primary">BCI-14-AR-009</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">اسم المحطه</span>
+                        <span class="badge bg-primary">المرشحة الرئيسية بأتريب</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1"> المركز / الحي</span>
+                        <span class="badge bg-primary">مدينة بنها</span>
+                    </div>
+                    <div class="d-center">
+                        <span class="badge bg-success mb-1">نطاق الخدمه</span>
+                        <span class="badge bg-primary">مدينة بنها بالكامل وبعض القرى القريبة من مدينة بنها مثل (الرملة + طحلة + ورورة+ كفر سعد+ شبلنجة + كفر مويس)</span>
+                    </div>
