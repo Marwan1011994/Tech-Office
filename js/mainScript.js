@@ -40,9 +40,11 @@ codeId.onkeyup = function(){
     }else if(codeId.value ===""){
         correctId.setAttribute("hidden","");
         wrongId.setAttribute("hidden","")
+        passId.setAttribute("readonly","");
     }else{
         wrongId.removeAttribute("hidden")
         correctId.setAttribute("hidden","")
+        passId.setAttribute("readonly","");
     }
 }
 passId.onkeyup = function(){
