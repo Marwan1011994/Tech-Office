@@ -19,12 +19,18 @@ let submit = document.getElementById("submit")
 submit.onclick = function(){
     if(codeId.value === "em" && passId.value === "0000" ){
         window.location.href='indicators.html';
+    }else if(codeId.value === "ms" && passId.value === "0000" ){
+        window.location.href='cmanger.html';
     }
-}
 
-window.onload = function(){
-    console.log(5)
 }
+// log in by Enter
+passId.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      submit.click();
+    }
+  });
 
 let correctId = document.querySelector(".login .correctid")
 let correctPass = document.querySelector(".login .correctpass")
@@ -32,7 +38,7 @@ let wrongId = document.querySelector(".login .wrongid")
 let wrongPass = document.querySelector(".login .wrongpass")
 
 codeId.onkeyup = function(){
-    if(codeId.value === "em"){
+    if(codeId.value === "em" || codeId.value === "ms" ){
         correctId.removeAttribute("hidden");
         wrongId.setAttribute("hidden","");
         passId.removeAttribute("readonly");

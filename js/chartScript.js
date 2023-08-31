@@ -267,4 +267,66 @@ new Chart(clPower, {
       },
   });
 
+//كمية المياه المنتجه من الافرع والمباعه
+// المحطات المرشحة الكبري
+const bigStations2 = document.getElementById('myChart66');
+new Chart(bigStations2, {
+    type: 'bar',
+    data: {
+      labels: ['اتريب المرشحه', 'العبادله المرشحه', 'كوم اشفين المرشحه', 'شبين القناطر المرشحه', 'القناطر الخيرية المرشحه', 'ابو زعبل المرشحه', 'سرياقوس المرشحه'],
+      datasets: [{
+        label: 'متوسط كمية المياه المنتجه م3/يوم',
+        data: [55213, 93110, 79096, 79469, 54199, 42011,48305],
+        backgroundColor: [
+          'blue'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'المحطات المرشحة الكبري'+" "+"الربع الثالث",
+          }
+        },
+        animations: {
+          radius: {
+            duration: 400,
+            easing: 'linear',
+            loop: (context) => context.active
+          }
+        },
+        hoverRadius: 12,
+        hoverBackgroundColor: '#9E4784',
+        interaction: {
+          mode: 'nearest',
+          intersect: false,
+          axis: 'x'
+        },
+      },
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
